@@ -41,6 +41,54 @@
 #define ROCK_A_BYE_BABY QD_NOTE(_B4), E__NOTE(_D4), Q__NOTE(_B5), H__NOTE(_A5), Q__NOTE(_G5), QD_NOTE(_B4), E__NOTE(_D5), Q__NOTE(_G5), H__NOTE(_FS5),
 
 #define CLUEBOARD_SOUND HD_NOTE(_C3), HD_NOTE(_D3), HD_NOTE(_E3), HD_NOTE(_F3), HD_NOTE(_G3), HD_NOTE(_A4), HD_NOTE(_B4), HD_NOTE(_C4)
+
+#define MARIO_THEME \
+    Q__NOTE(_E5), \
+    H__NOTE(_E5), \
+    H__NOTE(_E5), \
+    Q__NOTE(_C5), \
+    H__NOTE(_E5), \
+    W__NOTE(_G5), \
+    Q__NOTE(_G4),
+
+#define MARIO_GAMEOVER \
+    HD_NOTE(_C5 ), \
+    HD_NOTE(_G4 ), \
+    H__NOTE(_E4 ), \
+    H__NOTE(_A4 ), \
+    H__NOTE(_B4 ), \
+    H__NOTE(_A4 ), \
+    H__NOTE(_AF4), \
+    H__NOTE(_BF4), \
+    H__NOTE(_AF4), \
+    WD_NOTE(_G4 ),
+
+#define MARIO_MUSHROOM \
+    S__NOTE(_C5 ), \
+    S__NOTE(_G4 ), \
+    S__NOTE(_C5 ), \
+    S__NOTE(_E5 ), \
+    S__NOTE(_G5 ), \
+    S__NOTE(_C6 ), \
+    S__NOTE(_G5 ), \
+    S__NOTE(_GS4), \
+    S__NOTE(_C5 ), \
+    S__NOTE(_DS5), \
+    S__NOTE(_GS5), \
+    S__NOTE(_DS5), \
+    S__NOTE(_GS5), \
+    S__NOTE(_C6 ), \
+    S__NOTE(_DS6), \
+    S__NOTE(_GS6), \
+    S__NOTE(_DS6), \
+    S__NOTE(_AS4), \
+    S__NOTE(_D5 ), \
+    S__NOTE(_F5 ), \
+    S__NOTE(_AS5), \
+    S__NOTE(_D6 ), \
+    S__NOTE(_F6 ), \
+    S__NOTE(_AS6), \
+    S__NOTE(_F6 )
 /*
     HD_NOTE(_G3), HD_NOTE(_E3), HD_NOTE(_C3), \
     Q__NOTE(_E3), Q__NOTE(_C3), Q__NOTE(_G3), \
