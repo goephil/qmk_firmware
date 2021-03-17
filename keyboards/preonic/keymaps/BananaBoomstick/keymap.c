@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_RAISE] = LAYOUT_preonic_grid(KC_GESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, _______, _______, _______, KC_EQL, KC_DEL, KC_CAPS, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, _______, _______, _______, KC_LBRC, _______, ALGR(KC_7), KC_TAB, ALGR(KC_0), _______, _______, _______, _______, _______, _______, KC_SCLN, KC_QUOT, KC_LSFT, ALGR(KC_8), _______, ALGR(KC_9), _______, _______, _______, _______, _______, _______, _______, KC_RSFT, KC_LCTL, KC_LGUI, KC_NUBS, KC_LALT, _______, KC_SPC, KC_SPC, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END),
 
     // Adjust (Lower + Raise)
-    [_ADJUST] = LAYOUT_preonic_grid(KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, RESET, DEBUG, _______, _______, _______, _______, _______, KC_INSERT, _______, KC_PSCR, KC_DEL, KC_MUTE, _______, MU_MOD, AU_ON, AU_OFF, AG_NORM, AG_SWAP, QWERTZ, _______, _______, _______, _______, KC_LSFT, MUV_DE, MUV_IN, MU_ON, MU_OFF, CK_ON, CK_OFF, CK_UP, CK_DOWN, CK_RST, _______, KC_RSFT, _______, _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END)
+    [_ADJUST] = LAYOUT_preonic_grid(KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, _______, RESET, DEBUG, MI_ON, MI_OFF, _______, _______, _______, KC_INSERT, _______, KC_PSCR, KC_DEL, KC_MUTE, _______, MU_MOD, AU_ON, AU_OFF, AG_NORM, AG_SWAP, QWERTZ, _______, _______, _______, _______, KC_LSFT, MUV_DE, MUV_IN, MU_ON, MU_OFF, CK_ON, CK_OFF, CK_UP, CK_DOWN, CK_RST, _______, KC_RSFT, _______, _______, _______, _______, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END)
 
 };
 
@@ -66,9 +66,9 @@ uint16_t muse_tempo     = 10;
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (IS_LAYER_ON(_QWERTZ)) {
         if (clockwise) {
-            tap_code_delay(KC_MNXT, 10);
+            tap_code_delay(KC_VOLU, 10);
         } else {
-            tap_code_delay(KC_MPRV, 10);
+            tap_code_delay(KC_VOLD, 10);
         }
     } else if (IS_LAYER_ON(_LOWER)) {
         if (clockwise) {
@@ -78,9 +78,9 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         }
     } else if (IS_LAYER_ON(_RAISE)) {
         if (clockwise) {
-            tap_code_delay(KC_VOLU, 10);
+            tap_code_delay(KC_MNXT, 10);
         } else {
-            tap_code_delay(KC_VOLD, 10);
+            tap_code_delay(KC_MPRV, 10);
         }
     } else {
         if (clockwise) {
